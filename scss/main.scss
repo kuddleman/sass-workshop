@@ -5,10 +5,22 @@ $font-weights: (
   "regular": 400,
   "medium": 500,
   "bold": 700
-)
+);
 
 
 
 body {
   background: $primary-color;
+  color: $text-color;
+  
 }
+
+.main {
+  width: 80%;
+  margin: 0 auto;
+
+  #{&}__paragraph {
+    font-weight: map-get($font-weights, bold);
+  }
+}
+
